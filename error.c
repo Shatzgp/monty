@@ -34,7 +34,7 @@ void error_exit(unsigned int error_code, ...)
 		default:
 			break;
 	}
-	free_node();
+	free_nodes();
 	exit(EXIT_FAILURE);
 }
 
@@ -73,7 +73,7 @@ void error_exit2(unsigned int error_code, ...)
 		default:
 			break;
 	}
-	free_node();
+	free_nodes();
 	exit(EXIT_FAILURE);
 }
 
