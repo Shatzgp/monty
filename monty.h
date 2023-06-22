@@ -63,5 +63,6 @@ void pushs(stack_t **new_node, unsigned int n_line);
 void pall(stack_t **stack, unsigned int n_line);
 void pop(stack_t **stack, unsigned int n_line);
 void pint(stack_t **stack, unsigned int n_line);
+void find_fun(op_func f, char *op_code, char *cmd, int n_line, int format);
 
 #endif
