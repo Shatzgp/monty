@@ -38,18 +38,20 @@ void search_function(char *opcode, char *cmd, int n_line, int format)
 }
 
 /**
- * find_function - Executes the required function.
- * @function: Pointer to the function to call.
+ * find_f - Executes the required function.
+ * @f: Pointer to the function to call.
  * @opcode: String representing opcode.
  * @cmd: String representing numeric value.
  * @n_line: Line number for instruction.
  * @format: Format specifier.
  */
-void find_function(op_func function, char *opcode, char *cmd, int n_line, int format)
+void find_f(op_func f, char *opcode, char *cmd, int n_line, int format)
 {
 	stack_t *node;
 	int error, i;
+
 	error = 1;
+
 	if (strcmp(opcode, "push") == 0)
 	{
 		if (cmd != NULL && cmd[0] == '-')

@@ -7,14 +7,14 @@
  */
 void multi(stack_t **stack, unsigned int line_number)
 {
-    int result;
+	int result;
 
-    if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
-        error_shatz2(8, line_number, "mul");
+	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
+	error_shatz2(8, line_number, "mul");
 
-    *stack = (*stack)->next;
-    result = (*stack)->n * (*stack)->prev->n;
-    free((*stack)->prev);
-    (*stack)->prev = NULL;
-    (*stack)->n = result;
+	*stack = (*stack)->next;
+	result = (*stack)->n * (*stack)->prev->n;
+	free((*stack)->prev);
+	(*stack)->prev = NULL;
+	(*stack)->n = result;
 }

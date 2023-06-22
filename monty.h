@@ -50,7 +50,7 @@ void open_file(char *file_name);
 void read_file(FILE *file_descriptor);
 int interpret_line(char *string, int line_number, int format);
 void search_function(char *opcode, char *cmd, int n_line, int format);
-void find_function(op_func function, char *opcode, char *cmd, int n_line, int format);
+void find_f(op_func f, char *opcode, char *cmd, int n_line, int format);
 void swap_elements(stack_t **stack, unsigned int line_number);
 void add_elements(stack_t **stack, unsigned int line_number);
 void subtract_elements(stack_t **stack, unsigned int line_number);

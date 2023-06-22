@@ -18,7 +18,7 @@ stack_t *create_node(int data)
 	new_node->prev = NULL;
 	new_node->data = data;
 
-	return new_node;
+	return (new_node);
 }
 
 /**

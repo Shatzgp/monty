@@ -67,15 +67,15 @@ int interpret_line(char *string, int line_number, int format)
 	opcode = strtok(string, delimiter);
 
 	if (opcode == NULL)
-		return format;
+		return (format);
 
 	argument = strtok(NULL, delimiter);
 
 	if (strcmp(opcode, "queue") == 0)
-		return 1;
+		return (1);
 	else if (strcmp(opcode, "stack") == 0)
-		return 0;
+		return (0);
 
 	search_function(opcode, argument, line_number, format);
-	return format;
+	return (format);
 }

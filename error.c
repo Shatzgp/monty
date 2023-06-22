@@ -68,7 +68,7 @@ void error_shatz2(unsigned int error_codes, ...)
 			n_line = va_arg(ag, unsigned int);
 			opp_errors = va_arg(ag, char *);
 			fprintf(stderr, "L%u: can't div %s, stack too short \n",
-					n_line, opo_errors);
+					n_line, opp_errors);
 			break;
 		default:
 			break;
