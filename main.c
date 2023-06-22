@@ -11,8 +11,6 @@
 
 int main(int argc, char **argv)
 {
-
-	size_t size = 0;
 	unsigned int ln = 1;
 	stack_t *stack = NULL;
 
@@ -28,7 +26,6 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	while ((getline(&varx.buffer, &size, varx.fd)) != -1)
 	{
 		go_to(&stack, ln);
 
